@@ -10,7 +10,7 @@ JWT token-based authorization
 Protected CRUD operations for products
 
 Technologies Used 🛠️
-Python 3.x
+Python 
 
 Flask
 
@@ -30,21 +30,17 @@ Python 3.x
 Google Authenticator App (iOS/Android)
 
 Setup Instructions ⚙️
-1. Clone the Repository
-bash
-Copy
-git clone https://github.com/your-username/flask-jwt-2fa-api.git
-cd flask-jwt-2fa-api
-2. Create a Virtual Environment (Recommended)
+
+1. Create a Virtual Environment (Recommended)
 bash
 Copy
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
-3. Install Dependencies
+2.install Dependencies
 bash
 Copy
 pip install -r requirements.txt
-4. Database Setup
+3. Database Setup
 Start XAMPP and run Apache + MySQL.
 
 Create a database named secure_api in phpMyAdmin (http://localhost/phpmyadmin).
@@ -68,11 +64,11 @@ CREATE TABLE products (
     stock INT NOT NULL,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
-5. Configure Environment Variables
+4. Configure Environment Variables
 Create a .env file:
 
 env
-Copy
+
 JWT_SECRET_KEY=your_super_secret_key
 DB_HOST=localhost
 DB_USER=root
@@ -80,7 +76,7 @@ DB_PASSWORD=
 DB_NAME=secure_api
 How to Run 🚀
 bash
-Copy
+
 python app.py
 The API will start at http://localhost:5000.
 

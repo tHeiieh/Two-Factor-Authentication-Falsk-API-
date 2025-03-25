@@ -1,4 +1,6 @@
 Flask API with JWT Authentication & 2FA 🔒
+
+
 A secure REST API built with Flask featuring:
 
 User registration/login
